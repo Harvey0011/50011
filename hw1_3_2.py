@@ -14,7 +14,6 @@ def pe(Tag):
                         (\.[a-zA-Z])    
                         )''', re.VERBOSE)
     items=root.getElementsByTagName(Tag)
-    
     for i in range(len(items)):
         item=items[i]
         email=item.getAttribute("id")
